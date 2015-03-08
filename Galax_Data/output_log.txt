@@ -8,19 +8,13 @@ Direct3D:
 Begin MonoManager ReloadAssembly
 Platform assembly: C:\Development\Galax\Galax_Data\Managed\UnityEngine.dll (this message is harmless)
 Loading C:\Development\Galax\Galax_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Development\Galax\Galax_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading C:\Development\Galax\Galax_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
 Platform assembly: C:\Development\Galax\Galax_Data\Managed\Assembly-CSharp.dll (this message is harmless)
 Loading C:\Development\Galax\Galax_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Development\Galax\Galax_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
-Loading C:\Development\Galax\Galax_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
-Platform assembly: C:\Development\Galax\Galax_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
-Loading C:\Development\Galax\Galax_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
 Platform assembly: C:\Development\Galax\Galax_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading C:\Development\Galax\Galax_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.071 seconds
-desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+- Completed reload, in  0.051 seconds
 <RI> Initializing input.
 XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 Platform assembly: C:\Development\Galax\Galax_Data\Managed\System.Core.dll (this message is harmless)

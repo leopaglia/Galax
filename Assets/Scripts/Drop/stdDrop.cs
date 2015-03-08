@@ -3,6 +3,7 @@ using System.Collections;
 
 public class stdDrop : MonoBehaviour {
 
+    public int speedBuff;
 	// Use this for initialization
 	void Start () {
 	
@@ -15,6 +16,7 @@ public class stdDrop : MonoBehaviour {
 
     void OnTriggerEnter(Collider other) {
         if(other.tag == "Player"){
+            other.gameObject.SendMessage("Buff", speedBuff);
             Destroy(gameObject);
         }
 

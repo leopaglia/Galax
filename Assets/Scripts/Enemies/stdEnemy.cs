@@ -13,13 +13,17 @@ public class stdEnemy : MonoBehaviour {
 	}
 	
 	void Update () {
-       // if (hp <= 0)
-       //     Destroy(gameObject);
+        
+        if (hp <= 0) {
+            Destroy(gameObject);
+        //    animation.CrossFade("Destroy");
+        }
+
 	}
 
-  //  void Hit(int damage) {
-  //      this.hp -= damage;
-  //  }
+    void Hit(int damage) {
+        this.hp -= damage;
+    }
 
     void OnDestroy() {
         int random = Random.Range(0, 100);

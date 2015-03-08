@@ -17,4 +17,8 @@ public class Movement : MonoBehaviour {
 
         transform.position = newPosition;
 	}
+
+    void Buff(int buff) {
+        speed += buff;
+    }
 }

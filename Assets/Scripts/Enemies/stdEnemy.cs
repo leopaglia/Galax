@@ -39,10 +39,9 @@ public class stdEnemy : MonoBehaviour {
             int random = Random.Range(0, 100);
        
             //si esta en el rango de drop
-            if (random <= dropChance) {
+            if (random <= dropChance) 
                 Instantiate(drop, transform.position, transform.rotation);
-            }
-
+            
         }
 
     }

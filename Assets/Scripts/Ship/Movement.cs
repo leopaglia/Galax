@@ -12,10 +12,12 @@ public class Movement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
         Vector3 newPosition = transform.position;
         newPosition.x += Input.GetAxis("Horizontal") * speed * Time.deltaTime;
 
         transform.position = newPosition;
+
 	}
 
     void Buff(int buff) {

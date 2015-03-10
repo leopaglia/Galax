@@ -13,15 +13,11 @@ public class shipController : MonoBehaviour {
     void renderWeapons() {
 
         //render
-        
         GameObject ship = GameObject.Find("Ship");
 
-        foreach (BaseWeapon weapon in weapons) {
-
+        foreach (BaseWeapon weapon in weapons) 
             weapon.Render(ship);
-            
-        }
-
+   
         //set every weapon as child
         GameObject[] instancesArr = GameObject.FindGameObjectsWithTag("Weapon");
 

@@ -9,10 +9,6 @@ public class stdEnemy : MonoBehaviour {
     public GameObject drop;
 
     private bool isQuitting;
-
-	void Start () {
-	
-	}
 	
 	void Update () {
         

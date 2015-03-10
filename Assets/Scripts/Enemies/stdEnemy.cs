@@ -8,6 +8,8 @@ public class stdEnemy : MonoBehaviour {
     public float dropChance;
     public GameObject drop;
 
+    private bool isQuitting;
+
 	void Start () {
 	
 	}
@@ -25,12 +27,23 @@ public class stdEnemy : MonoBehaviour {
         this.hp -= damage;
     }
 
+    void OnApplicationQuit() {
+        isQuitting = true;
+    }
+
     void OnDestroy() {
-        int random = Random.Range(0, 100);
+
+        //fix para edit mode
+        if (!isQuitting) {
+            
+            int random = Random.Range(0, 100);
        
-        //si esta en el rango de drop
-        if (random <= dropChance) {
-            Instantiate(drop, transform.position, transform.rotation);
+            //si esta en el rango de drop
+            if (random <= dropChance) {
+                Instantiate(drop, transform.position, transform.rotation);
+            }
+
         }
+
     }
 }

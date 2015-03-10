@@ -12,7 +12,7 @@ Platform assembly: C:\Development\Galax\Galax_Data\Managed\Assembly-CSharp.dll (
 Loading C:\Development\Galax\Galax_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
 Platform assembly: C:\Development\Galax\Galax_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading C:\Development\Galax\Galax_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.051 seconds
+- Completed reload, in  0.223 seconds
 <RI> Initializing input.
 XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.

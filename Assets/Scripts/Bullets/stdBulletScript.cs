@@ -27,6 +27,5 @@ public class stdBulletScript : MonoBehaviour {
             Destroy(gameObject);
         }
 
-
     }
 }

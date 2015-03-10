@@ -27,13 +27,13 @@ public class stdEnemy : MonoBehaviour {
         this.hp -= damage;
     }
 
+    //fix para edit mode
     void OnApplicationQuit() {
         isQuitting = true;
     }
 
     void OnDestroy() {
 
-        //fix para edit mode
         if (!isQuitting) {
             
             int random = Random.Range(0, 100);

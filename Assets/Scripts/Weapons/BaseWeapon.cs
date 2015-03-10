@@ -1,15 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BaseWeapon : MonoBehaviour {
+namespace templates {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    public abstract class BaseWeapon : MonoBehaviour {
+
+        abstract public void Render( GameObject ship);
+
+        abstract public void Shoot();
+
+        void Update() { if (Input.GetKeyDown("space")) this.Shoot(); }
+
+    }
 }
+

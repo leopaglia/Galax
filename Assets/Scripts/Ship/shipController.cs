@@ -19,10 +19,11 @@ public class shipController : MonoBehaviour {
             weapon.Render(ship);
    
         //set every weapon as child
-        GameObject[] instancesArr = GameObject.FindGameObjectsWithTag("Weapon");
+        GameObject[] instancesArray = GameObject.FindGameObjectsWithTag("Weapon");
 
-        for (int i = 0; i < instancesArr.Length; ++i) 
-            instancesArr[i].gameObject.transform.SetParent(ship.transform);
+        foreach (GameObject instance in instancesArray) {
+            instance.gameObject.transform.SetParent(ship.transform);
+        }
 
     }
 }

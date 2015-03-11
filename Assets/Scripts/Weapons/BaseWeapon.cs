@@ -5,7 +5,7 @@ namespace templates {
 
     public abstract class BaseWeapon : MonoBehaviour {
 
-        abstract public void Render( GameObject ship);
+        abstract public void Render(GameObject ship);
 
         abstract public void Shoot();
 

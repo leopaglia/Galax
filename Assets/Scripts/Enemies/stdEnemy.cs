@@ -1,44 +1,28 @@
 ﻿using UnityEngine;
 using System.Collections;
+using templates;
+using helpers;
 
-public class stdEnemy : MonoBehaviour {
+public class stdEnemy : BaseEnemy {
 
-    public int hp;
-    public float speed;
-    public float dropChance;
-    public GameObject drop;
+    public GameObject[] possibleDrops;
 
-    private bool isQuitting;
-	
-	void Update () {
-        
-        if (hp <= 0) {
-            Destroy(gameObject);
-        //    animation.CrossFade("Destroy");
+    void Start() {
+
+        //-- Config drop rate -- sum <= 1
+        float[] dropChances = {0.2f,  //stddrop
+                               0.1f,  //bigDrop
+                              };
+
+
+        dropArray = new ObjAndChance[possibleDrops.Length];
+
+        for (int i = 0; i < possibleDrops.Length; i++) {
+            dropArray[i] = new ObjAndChance(possibleDrops[i], dropChances[i]);
         }
+    }
 
-	}
-
-    void Hit(int damage) {
+   override public void Hit(int damage) {
         this.hp -= damage;
-    }
-
-    //fix para edit mode
-    void OnApplicationQuit() {
-        isQuitting = true;
-    }
-
-    void OnDestroy() {
-
-        if (!isQuitting) {
-            
-            int random = Random.Range(0, 100);
-       
-            //si esta en el rango de drop
-            if (random <= dropChance) 
-                Instantiate(drop, transform.position, transform.rotation);
-            
-        }
-
     }
 }

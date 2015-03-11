@@ -5,9 +5,23 @@ using templates;
 public class shipController : MonoBehaviour {
 
     public BaseWeapon[] weapons;
+    public float speed;
 
-    void Start() {
+    void Start() { 
         this.renderWeapons();
+    }
+
+    void Update() {
+        //movement
+        Vector3 newPosition = transform.position;
+        newPosition.x += Input.GetAxis("Horizontal") * speed * Time.deltaTime;
+
+        transform.position = newPosition;
+
+    }
+
+    void Buff(int buff) {
+        speed += buff;
     }
 
     void renderWeapons() {

@@ -20,7 +20,7 @@ public class shipController : MonoBehaviour {
 
     }
 
-    void Buff(int buff) {
+    void IncreaseSpeed(int buff) {
         speed += buff;
     }
 
